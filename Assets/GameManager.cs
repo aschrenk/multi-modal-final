@@ -76,8 +76,8 @@ public class GameManager : MonoBehaviour
 
     void PlayLine()
     {
-        //currentAudio.clip = voiceLines[currentLine];
-        //currentAudio.Play();
+        currentAudio.clip = voiceLines[currentLine];
+        currentAudio.Play();
         
         CheckSpeaker();
 

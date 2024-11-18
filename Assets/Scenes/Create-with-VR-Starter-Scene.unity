@@ -1029,36 +1029,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerID: 040000000400000001000000040000000100000004000000010000000400000001000000040000000400000001000000040000000400000004000000010000000400000004000000040000000400000001000000030000000100000003000000010000000300000001000000030000000100000001000000
   lineLength:
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
-  - 4
+  - 3.474
+  - 1.322
+  - 5.52
+  - 2.691
+  - 5.952
+  - 3.997
+  - 2.064
+  - 2.011
+  - 4.872
+  - 2.22
+  - 4.127
+  - 2.616
+  - 2.952
+  - 2.582
+  - 2.011
+  - 2.928
+  - 2.22
+  - 1.985
+  - 1.881
+  - 4.519
+  - 1.2
+  - 4.023
+  - 3.528
+  - 3.004
+  - 3.048
+  - 4.752
+  - 3.36
+  - 4.752
+  - 3.474
+  - 6.087
   scriptLine:
   - 'Thank you for calling Pizza Pizza, home of the Piece of Pizza Pizza! Thank you
     for calling Pizza Pizza, home of the Piece of Pizza Pizza! '
@@ -1094,7 +1094,37 @@ MonoBehaviour:
   - Fine, if it gets you in the car we can hit a drive thru on the way.
   - " I\u2019m hard stopping the demo here because I\u2019ve already spent too long
     writing code."
-  voiceLines: []
+  voiceLines:
+  - {fileID: 8300000, guid: 428c46bba451783489cb7bb32e9a8532, type: 3}
+  - {fileID: 8300000, guid: 8a31c7b4aa4d316459abd134cca5d5c9, type: 3}
+  - {fileID: 8300000, guid: 3aa4ee24cdabb704680cc60daef0dc3c, type: 3}
+  - {fileID: 8300000, guid: b814bff110c240d488e02f3f4bbe5960, type: 3}
+  - {fileID: 8300000, guid: 63130aae7899438498ae13e3798f519a, type: 3}
+  - {fileID: 8300000, guid: e5ba864010137fd4bb50fb73a089ad89, type: 3}
+  - {fileID: 8300000, guid: ff52a5413a6c75e4c8c964388e54bad3, type: 3}
+  - {fileID: 8300000, guid: a50e10ec0bf88fa43a231f840c68182f, type: 3}
+  - {fileID: 8300000, guid: 9c8029c89fd78d049995c7c8516fb04f, type: 3}
+  - {fileID: 8300000, guid: ba4cc7d2aab7e714ab9bd12f9ef003ca, type: 3}
+  - {fileID: 8300000, guid: 8a4d1600b5c576647a2405654a6b0ec8, type: 3}
+  - {fileID: 8300000, guid: f3a64cf63f32faf4cbe397f31947ad9f, type: 3}
+  - {fileID: 8300000, guid: 9a1915ca46895784980599be5afcb01e, type: 3}
+  - {fileID: 8300000, guid: 831ad591e7ece994899c0b8e68215e26, type: 3}
+  - {fileID: 8300000, guid: dc98a8c94cd4e164fa23bc98287cced5, type: 3}
+  - {fileID: 8300000, guid: ad0d0032eccf0e8478713d9286e9ae54, type: 3}
+  - {fileID: 8300000, guid: 0271bbf0b1cbcf846bae5ae38701ecbe, type: 3}
+  - {fileID: 8300000, guid: 6f04f111f6071ab429d7caa0304e64c0, type: 3}
+  - {fileID: 8300000, guid: edeb608770575e14cabcc9dc477965b3, type: 3}
+  - {fileID: 8300000, guid: 09e4ec8dc45908a43bcb039a9a9603ee, type: 3}
+  - {fileID: 8300000, guid: c38cfed37c25ccc4ea8707d529d705c2, type: 3}
+  - {fileID: 8300000, guid: 1626c9aec2831704e88d7cbe41363d99, type: 3}
+  - {fileID: 8300000, guid: b7cb821daf5af1444ac84a68594eb687, type: 3}
+  - {fileID: 8300000, guid: 9e0cd73be78275b4884faf499261c2ba, type: 3}
+  - {fileID: 8300000, guid: 5ab12890fcd966a4fbe60e46ef871a04, type: 3}
+  - {fileID: 8300000, guid: 7cefb108f73cdf44180f67d476c59362, type: 3}
+  - {fileID: 8300000, guid: f27be01a0fba5ea489cee3ae39dc4ddf, type: 3}
+  - {fileID: 8300000, guid: d7ec6c2cf6395d345b786dd299eaed38, type: 3}
+  - {fileID: 8300000, guid: 80ef05d74009c1542b75eab283961498, type: 3}
+  - {fileID: 8300000, guid: a25232ffe52a0c6489b583ca653c5317, type: 3}
   wholeScreen: {fileID: 190018421}
   speakerScreen: {fileID: 2033004270}
   lineScreen: {fileID: 1972287828}
