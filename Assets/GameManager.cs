@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     bool lineConnected;
     int portsConnected;
+    bool playThisScene;
 
     public GameObject wholeScreen;
     public TMP_Text speakerScreen;
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
 
         lineConnected = false;
         portsConnected = 0;
+        playThisScene = false;
 
         currentAudio = speaker;
         speaker.volume = 0;
@@ -184,6 +186,7 @@ public class GameManager : MonoBehaviour
         {
             sceneNumber = 3;
             currentLine = 20;
+            playThisScene = false;
 
             //fix for final
             portsConnected--;
@@ -202,8 +205,8 @@ public class GameManager : MonoBehaviour
         {
             sceneNumber = 3;
             currentLine = 1000;
+            playThisScene = false;
 
-            
             changeMaterialSockets[1].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
 
@@ -215,6 +218,7 @@ public class GameManager : MonoBehaviour
         {
             sceneNumber = 4;
             currentLine = 10000;
+            playThisScene = false;
 
             changeMaterialSockets[0].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
@@ -247,10 +251,11 @@ public class GameManager : MonoBehaviour
     {
         //playButton.GetComponent<Animation>().Play();
 
-        if (storedLine != -1 && (lineConnected == true || sceneNumber == 4))
+        if (playThisScene == false && storedLine != -1 && (lineConnected == true || sceneNumber == 4))
         {
             playOverlay.SetActive(true);
             inturrupt = true;
+            playThisScene = true;
 
             prevLine = currentLine;
             currentLine = storedLine;
