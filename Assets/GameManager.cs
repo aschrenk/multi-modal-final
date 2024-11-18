@@ -234,7 +234,7 @@ public class GameManager : MonoBehaviour
 
     public void RecordPress()
     {
-        recordButton.GetComponent<Animation>().Play();
+        //recordButton.GetComponent<Animation>().Play();
         
         if (lineConnected == true)
         {
@@ -245,7 +245,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayPress()
     {
-        playButton.GetComponent<Animation>().Play();
+        //playButton.GetComponent<Animation>().Play();
 
         if (storedLine != -1 && (lineConnected == true || sceneNumber == 4))
         {
