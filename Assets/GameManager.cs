@@ -10,16 +10,19 @@ public class GameManager : MonoBehaviour
     public string[] scriptLine;
     public AudioClip[] voiceLines;
 
+    Coroutine lineCoroutine;
+
     int sceneNumber;
     int currentLine;
     int storedLine;
     int prevLine;
-    string skipCode;
+    int skipCode;
 
     bool lineConnected;
     int portsConnected;
     bool playThisScene;
 
+    public GameObject infoPopup;
     public GameObject wholeScreen;
     public TMP_Text speakerScreen;
     public TMP_Text lineScreen;
@@ -47,7 +50,7 @@ public class GameManager : MonoBehaviour
         currentLine = 0;
         storedLine = -1;
         prevLine = -1;
-        skipCode = null;
+        skipCode = -1;
 
         lineConnected = false;
         portsConnected = 0;
@@ -60,13 +63,15 @@ public class GameManager : MonoBehaviour
         pizza = true;
         discord = 0;
 
-        Invoke("WaitingForScene", 5);
-        
-        //delete after adding switch logic
-        //lineConnected = true;
-        //PlayLine();
     }
 
+    public void BeginGame()
+    {
+        infoPopup.SetActive(false);
+        Invoke("WaitingForScene", 2);
+    }
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -80,16 +85,7 @@ public class GameManager : MonoBehaviour
     {
         currentAudio.clip = voiceLines[currentLine];
         currentAudio.Play();
-        
-        CheckSpeaker();
 
-        lineScreen.text = scriptLine[currentLine];
-
-        Invoke("NextLine", lineLength[currentLine]);
-    }
-
-    void CheckSpeaker()
-    {
         switch (speakerID[currentLine])
         {
             case 1:
@@ -107,6 +103,23 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
+
+        lineScreen.text = scriptLine[currentLine];
+
+        if (lineCoroutine != null)
+        {
+            StopCoroutine(lineCoroutine);
+        }
+        lineCoroutine = StartCoroutine(LineManage());
+    }
+
+    private IEnumerator LineManage()
+    {
+        Debug.Log(inturrupt + " " + currentLine);
+        yield return new WaitForSecondsRealtime(lineLength[currentLine]);
+        
+        StopCoroutine(LineManage());
+        NextLine();
     }
     
     void NextLine()
@@ -114,35 +127,51 @@ public class GameManager : MonoBehaviour
         recordOverlay.SetActive(false);
         playOverlay.SetActive(false);
         
+        switch (skipCode)
+        {
+            case -1:
+                break;
+            case 1:
+                Debug.LogWarning("Skip 1");
+
+                skipCode = -1;
+                storedLine = -1;
+                currentLine = prevLine;
+                PlayLine();
+                return;
+            case 2:
+                Debug.LogWarning("Skip 2");
+
+                skipCode = -1;
+                storedLine = -1;
+                currentLine = 17;
+                PlayLine();
+                return;
+            default: 
+                break;
+        }
+        
         if (inturrupt == true && prevLine != -1)
         {
             //inturrupting first scene
             if (sceneNumber == 1)
             {
-                if (speakerID[prevLine] == 1)
+                if (speakerID[storedLine] == 1 && skipCode == -1)
                 {
-                    skipCode = "1a";
+                    inturrupt = false;
+                    skipCode = 1;
                     currentLine = 18;
                     PlayLine();
+                    return;
                 }
-                if (skipCode == "1a")
+                else if (speakerID[storedLine] == 4 && skipCode == -1)
                 {
-                    currentLine = prevLine;
                     inturrupt = false;
-                    PlayLine();
-                }
-
-                if (speakerID[prevLine] == 4)
-                {
-                    skipCode = "1b";
+                    pizza = false;
+                    skipCode = 2;
                     currentLine = 19;
                     PlayLine();
-                }
-                if (skipCode == "1b")
-                {
-                    currentLine = 17;
-                    inturrupt = false;
-                    PlayLine();
+                    return;
                 }
             }
             else if (sceneNumber == 2)
@@ -188,6 +217,9 @@ public class GameManager : MonoBehaviour
             currentLine = 20;
             playThisScene = false;
 
+            lineScreen.text = "Connecting...";
+            speakerScreen.text = "000-0000";
+
             //fix for final
             portsConnected--;
             lineConnected = false;
@@ -207,6 +239,9 @@ public class GameManager : MonoBehaviour
             currentLine = 1000;
             playThisScene = false;
 
+            lineScreen.text = "Connecting...";
+            speakerScreen.text = "000-0000";
+
             changeMaterialSockets[1].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
 
@@ -220,6 +255,9 @@ public class GameManager : MonoBehaviour
             currentLine = 10000;
             playThisScene = false;
 
+            lineScreen.text = "Connecting...";
+            speakerScreen.text = "000-0000";
+
             changeMaterialSockets[0].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
 
@@ -231,6 +269,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Normal advance");
             currentLine++;
             PlayLine();
         }
@@ -250,6 +289,7 @@ public class GameManager : MonoBehaviour
     public void PlayPress()
     {
         //playButton.GetComponent<Animation>().Play();
+        StopCoroutine(LineManage());
 
         if (playThisScene == false && storedLine != -1 && (lineConnected == true || sceneNumber == 4))
         {
@@ -268,76 +308,43 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void WaitingForScene()
+    private IEnumerator BlinkLights()
     {
-        if (sceneNumber == 1)
+        for (int i = 0; i < 11; i++)
         {
-            //blink the lights
-            for (int i = 0; i < 10; i++)
+            switch (sceneNumber)
             {
-                Invoke("MaterialBlink", 2);
+                case 1:
+                    changeMaterialSockets[0].ToggleMaterial();
+                    changeMaterialSockets[3].ToggleMaterial();
+                    break;
+                case 2:
+                    changeMaterialSockets[1].ToggleMaterial();
+                    changeMaterialSockets[2].ToggleMaterial();
+                    break;
+                case 3:
+                    changeMaterialSockets[0].ToggleMaterial();
+                    changeMaterialSockets[2].ToggleMaterial();
+                    break;
+                default:
+                    break;
             }
-
-            changeMaterialSockets[0].SetOtherMaterial();
-            changeMaterialSockets[3].SetOtherMaterial();
-            PlayLine();
-        }
-        else if (sceneNumber == 2)
-        {
-            //blink the lights
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-
-            changeMaterialSockets[1].SetOtherMaterial();
-            changeMaterialSockets[2].SetOtherMaterial();
-            PlayLine();
-        }
-        else if (sceneNumber == 3)
-        {
-            //blink the lights
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-            Invoke("MaterialBlink", 2);
-
-            changeMaterialSockets[0].SetOtherMaterial();
-            changeMaterialSockets[2].SetOtherMaterial();
-            PlayLine();
+            yield return new WaitForSecondsRealtime(1);
         }
 
+        CallStopLights();
     }
 
-    void MaterialBlink()
+    void CallStopLights()
     {
-        switch (sceneNumber)
-        {
-            case 1:
-                changeMaterialSockets[0].ToggleMaterial();
-                changeMaterialSockets[3].ToggleMaterial();
-                break;
-            case 2:
-                changeMaterialSockets[1].ToggleMaterial();
-                changeMaterialSockets[2].ToggleMaterial();
-                break;
-            case 3:
-                changeMaterialSockets[0].ToggleMaterial();
-                changeMaterialSockets[2].ToggleMaterial();
-                break;
-            default:
-                break;
-        }
+        StopCoroutine(BlinkLights());
+
+        PlayLine();
+    }
+
+    void WaitingForScene()
+    {
+        StartCoroutine(BlinkLights());
     }
 
     void ConnectionCheck()
