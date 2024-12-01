@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
 
     public ChangeMaterial[] changeMaterialSockets;
     public ChangeMaterial[] changeMaterialJacks;
+    public ChangeMaterial[] buttonMaterial;
     
     // Start is called before the first frame update
     void Start()
@@ -132,7 +133,7 @@ public class GameManager : MonoBehaviour
             case -1:
                 break;
             case 1:
-                Debug.LogWarning("Skip 1");
+                Debug.LogWarning("one line cut away, return to prev");
 
                 skipCode = -1;
                 storedLine = -1;
@@ -140,33 +141,103 @@ public class GameManager : MonoBehaviour
                 PlayLine();
                 return;
             case 2:
-                Debug.LogWarning("Skip 2");
+                Debug.LogWarning("employee hangs up");
 
                 skipCode = -1;
                 storedLine = -1;
                 currentLine = 17;
                 PlayLine();
                 return;
+            case 3:
+                Debug.LogWarning("s2 employee line");
+                
+                storedLine = -1;
+                if (currentLine == 32)
+                {
+                    currentLine = 33;
+                }
+                else
+                {
+                    skipCode = -1;
+                    currentLine = 28;
+                }
+                PlayLine();
+                return;
+            case 4:
+                Debug.LogWarning("s2 alex line");
+
+                storedLine = -1;
+                if (currentLine == 34 || currentLine == 35)
+                {
+                    currentLine++;
+                }
+                else
+                {
+                    skipCode = -1;
+                    discord++;
+                    currentLine = 28;
+                }
+                PlayLine();
+                return;
+            case 5:
+                Debug.LogWarning("s2 alex line");
+
+                storedLine = -1;
+                if (currentLine == 51)
+                {
+                    currentLine++;
+                }
+                else
+                {
+                    skipCode = -1;
+                    discord++;
+                    currentLine = 50;
+                }
+                PlayLine();
+                return;
+            case 6:
+                Debug.LogWarning("final scene cut in");
+
+                storedLine = -1;
+                if (currentLine == 65 || currentLine == 66)
+                {
+                    currentLine++;
+                }
+                else
+                {
+                    skipCode = -1;
+                    discord++;
+                    if (prevLine >= 61)
+                    {
+                        currentLine = 68;
+                    }
+                    else
+                    {
+                        RouteSplit();
+                    }
+                }
+                PlayLine();
+                return;
             default: 
                 break;
         }
         
-        if (inturrupt == true && prevLine != -1)
+        if (inturrupt == true && prevLine != -1 && skipCode == -1)
         {
+            inturrupt = false;
+
             //inturrupting first scene
             if (sceneNumber == 1)
             {
-                if (speakerID[storedLine] == 1 && skipCode == -1)
+                if (speakerID[storedLine] == 1)
                 {
-                    inturrupt = false;
                     skipCode = 1;
                     currentLine = 18;
                     PlayLine();
                     return;
                 }
-                else if (speakerID[storedLine] == 4 && skipCode == -1)
+                else if (speakerID[storedLine] == 4)
                 {
-                    inturrupt = false;
                     pizza = false;
                     skipCode = 2;
                     currentLine = 19;
@@ -176,52 +247,88 @@ public class GameManager : MonoBehaviour
             }
             else if (sceneNumber == 2)
             {
-
+                if (speakerID[storedLine] == 2 || speakerID[storedLine] == 3)
+                {
+                    skipCode = 1;
+                    currentLine = 31;
+                    PlayLine();
+                    return;
+                }
+                else if (speakerID[storedLine] == 4)
+                {
+                    skipCode = 3;
+                    currentLine = 32;
+                    PlayLine();
+                    return;
+                }
+                else if (speakerID[storedLine] == 1)
+                {
+                    skipCode = 4;
+                    currentLine = 34;
+                    PlayLine();
+                    return;
+                }
             }
             else if (sceneNumber == 3)
             {
-
+                if (storedLine == 26 || storedLine == 27)
+                {
+                    skipCode = 5;
+                    currentLine = 51;
+                    PlayLine();
+                    return;
+                }
+                else
+                {
+                    skipCode = 1;
+                    currentLine = 53;
+                    PlayLine();
+                    return;
+                }
             }
             else if (sceneNumber == 4)
             {
                 //turn audio back to behind after speaker is done
                 currentAudio = behind;
+
+                skipCode = 6;
+                currentLine = 65;
+                PlayLine();
+                return;
             }
 
             return;
         }
-        //food diverge - FIX FOR FINAL
-        else if (currentLine == 24 && pizza == false)
+        //food diverge - fixed
+        else if (currentLine == 41 && pizza == false)
         {
-            currentLine = 27;
+            currentLine = 44;
             PlayLine(); 
             return;
         }
-        else if (currentLine == 26)
+        else if (currentLine == 43)
         {
-            currentLine = 29;
+            currentLine = 46;
             PlayLine();
             return;
         }
-        //playtest end message
-        else if (currentLine == 29)
+        else if (currentLine == 60)
         {
-            speakerScreen.text = "206-5381";
-            lineScreen.text = "This is the end of the playtest content!";
+            RouteSplit();
+            PlayLine();
             return;
         }
         //end scene 1, setup scene 2 (3 for demo)
         else if (currentLine == 17)
         {
-            sceneNumber = 3;
+            sceneNumber = 2;
             currentLine = 20;
             playThisScene = false;
 
             lineScreen.text = "Connecting...";
             speakerScreen.text = "000-0000";
 
-            //fix for final
-            portsConnected--;
+            portsConnected -= 2;
             lineConnected = false;
             changeMaterialJacks[0].SetOriginalMaterial();
             changeMaterialJacks[1].SetOriginalMaterial();
@@ -233,14 +340,19 @@ public class GameManager : MonoBehaviour
             return;
         }
         //end scene 2
-        else if (currentLine == 40)
+        else if (currentLine == 30)
         {
             sceneNumber = 3;
-            currentLine = 1000;
+            currentLine = 37;
             playThisScene = false;
 
             lineScreen.text = "Connecting...";
             speakerScreen.text = "000-0000";
+
+            portsConnected--;
+            lineConnected = false;
+            changeMaterialJacks[0].SetOriginalMaterial();
+            changeMaterialJacks[1].SetOriginalMaterial();
 
             changeMaterialSockets[1].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
@@ -252,11 +364,16 @@ public class GameManager : MonoBehaviour
         else if (currentLine == 50)
         {
             sceneNumber = 4;
-            currentLine = 10000;
+            currentLine = 54;
             playThisScene = false;
 
             lineScreen.text = "Connecting...";
             speakerScreen.text = "000-0000";
+
+            portsConnected -= 2;
+            lineConnected = false;
+            changeMaterialJacks[0].SetOriginalMaterial();
+            changeMaterialJacks[1].SetOriginalMaterial();
 
             changeMaterialSockets[0].SetOriginalMaterial();
             changeMaterialSockets[2].SetOriginalMaterial();
@@ -269,9 +386,21 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Normal advance");
+            //Debug.Log("Normal advance");
             currentLine++;
             PlayLine();
+        }
+    }
+
+    void RouteSplit()
+    {
+        if (discord >= 2)
+        {
+            currentLine = 68;
+        }
+        else
+        {
+            currentLine = 61;
         }
     }
 
@@ -283,6 +412,7 @@ public class GameManager : MonoBehaviour
         {
             recordOverlay.SetActive(true);
             storedLine = currentLine;
+            buttonMaterial[1].SetOtherMaterial();
         }       
     }
 
@@ -293,6 +423,7 @@ public class GameManager : MonoBehaviour
 
         if (playThisScene == false && storedLine != -1 && (lineConnected == true || sceneNumber == 4))
         {
+            buttonMaterial[1].SetOriginalMaterial();
             playOverlay.SetActive(true);
             inturrupt = true;
             playThisScene = true;
@@ -353,11 +484,13 @@ public class GameManager : MonoBehaviour
         {
             wholeScreen.SetActive(true);
             speaker.volume = 1;
+            buttonMaterial[0].SetOtherMaterial();
         }
         else
         {
             wholeScreen.SetActive(false);
             speaker.volume = 0;
+            buttonMaterial[0].SetOriginalMaterial();
         }
     }
 

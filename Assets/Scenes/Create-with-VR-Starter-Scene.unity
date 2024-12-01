@@ -804,7 +804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -812,12 +812,12 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa9021c7190364bb1465a84066d3b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speakerID: 040000000400000001000000040000000100000004000000010000000400000001000000040000000400000001000000040000000400000004000000010000000400000004000000040000000400000001000000030000000100000003000000010000000300000001000000030000000100000001000000
+  speakerID: 040000000400000001000000040000000100000004000000010000000400000001000000040000000400000001000000040000000400000004000000010000000400000004000000040000000400000002000000030000000200000003000000020000000300000003000000020000000200000002000000030000000300000003000000020000000200000003000000020000000100000003000000010000000300000001000000010000000300000001000000030000000300000001000000010000000300000003000000010000000300000001000000020000000300000001000000020000000200000001000000030000000100000001000000020000000100000003000000010000000200000001000000030000000200000003000000010000000200000002000000
   lineLength:
   - 3.474
   - 1.322
@@ -956,6 +956,23 @@ MonoBehaviour:
   - 1.985
   - 1.881
   - 4.519
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
   - 1.2
   - 4.023
   - 3.528
@@ -965,7 +982,35 @@ MonoBehaviour:
   - 3.36
   - 4.752
   - 3.474
-  - 6.087
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
+  - 3
   scriptLine:
   - 'Thank you for calling Pizza Pizza, home of the Piece of Pizza Pizza! Thank you
     for calling Pizza Pizza, home of the Piece of Pizza Pizza! '
@@ -989,6 +1034,23 @@ MonoBehaviour:
   - Have a pizza perfect day!
   - Sorry, what?
   - '*laughs* Oh, so this is another prank call!'
+  - Jo, are you alone? We need to talk.
+  - "Yeah, what\u2019s wrong? Did something happen?"
+  - "No, not yet. I\u2019m still thinking about last night."
+  - Me too. I thought it would be a relief but...
+  - "We\u2019re still waiting for the other shoe to drop."
+  - "Right. It\u2019s not over yet."
+  - "I don\u2019t know if we were right to trust Alex with cleaning up."
+  - True, Alex is an idiot.
+  - I hate to say it, but we have to go back and check.
+  - Meet me there in 30, and bring Alex with you.
+  - Sure, we could use the musc-
+  - Um, sorry, could you repeat that?
+  - "\u2026What was that?"
+  - "I\u2019m not sure. \u2026Anyways-"
+  - Is Alex with you?
+  - No, what? I thought I just heard him with you.
+  - "No, why would I be- It doesn\u2019t matter."
   - Hello?
   - "Alex I\u2019m coming to pick you up in 10 minutes and I don't want to hear any
     whining."
@@ -999,8 +1061,38 @@ MonoBehaviour:
   - "You can eat your pizza later! It\u2019s better cold anyways."
   - "And can we pick up food on the way? I\u2019m starving."
   - Fine, if it gets you in the car we can hit a drive thru on the way.
-  - " I\u2019m hard stopping the demo here because I\u2019ve already spent too long
-    writing code."
+  - "We\u2019re going back to the place we were at last night."
+  - Oh, that freaky shed with the weird radio setup?
+  - Why would we go there, I already got rid of the-
+  - Shut up! Sam is already on the way, so we have to go.
+  - "I\u2019m almost to your house, you better be ready when I get there."
+  - Wait is Sam there? Why would you say that?
+  - "I don\u2019t know what you\u2019re talking about."
+  - "\u2026What?"
+  - Took you guys long enough to show up.
+  - "Sorry, Alex\u2019s stomach caused a bit of a delay."
+  - "Hey, I can\u2019t help having a high metabolism!"
+  - Whatever, what matters is that we finish what we started.
+  - "Something tells me you left that weirdo\u2019s body in the shed instead of cleaning
+    up like I asked you to. "
+  - "I\u2026 I did! I totally did."
+  - Prove it then. Open the door.
+  - Fine, I will!
+  - "It\u2019s locked. Because\u2026 I locked it behind me!"
+  - "Then break it down! We haven\u2019t got all day."
+  - "Uh, yeah, here goes\u2026"
+  - "Someone\u2019s in there."
+  - "It\u2019s a ghost! It\u2019s an angry ghost and they\u2019re going to kill-"
+  - "Be quiet! Ghosts aren\u2019t real. Alex, open the door!"
+  - "You know what? No! I\u2019m not opening the door. You keep pushing me around,
+    and I\u2019m sick of it. "
+  - Alex this is not the time to self actualize. Open the door!
+  - I have to do everything myself around here!
+  - Where are you going?
+  - "I\u2019m getting out of here!"
+  - "Get back here you idiot! You\u2019re causing a scene and we\u2019re going to
+    get"
+  - -caught.
   voiceLines:
   - {fileID: 8300000, guid: 428c46bba451783489cb7bb32e9a8532, type: 3}
   - {fileID: 8300000, guid: 8a31c7b4aa4d316459abd134cca5d5c9, type: 3}
@@ -1022,6 +1114,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6f04f111f6071ab429d7caa0304e64c0, type: 3}
   - {fileID: 8300000, guid: edeb608770575e14cabcc9dc477965b3, type: 3}
   - {fileID: 8300000, guid: 09e4ec8dc45908a43bcb039a9a9603ee, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
   - {fileID: 8300000, guid: c38cfed37c25ccc4ea8707d529d705c2, type: 3}
   - {fileID: 8300000, guid: 1626c9aec2831704e88d7cbe41363d99, type: 3}
   - {fileID: 8300000, guid: b7cb821daf5af1444ac84a68594eb687, type: 3}
@@ -1031,7 +1140,35 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f27be01a0fba5ea489cee3ae39dc4ddf, type: 3}
   - {fileID: 8300000, guid: d7ec6c2cf6395d345b786dd299eaed38, type: 3}
   - {fileID: 8300000, guid: 80ef05d74009c1542b75eab283961498, type: 3}
-  - {fileID: 8300000, guid: a25232ffe52a0c6489b583ca653c5317, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
   infoPopup: {fileID: 1116339241}
   wholeScreen: {fileID: 190018421}
   speakerScreen: {fileID: 2033004270}
@@ -1050,6 +1187,9 @@ MonoBehaviour:
   changeMaterialJacks:
   - {fileID: 1368129766}
   - {fileID: 2097770967}
+  buttonMaterial:
+  - {fileID: 8581603194412483136}
+  - {fileID: 8467134195964343370}
 --- !u!4 &433240965
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,6 +1884,124 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602221925}
   m_CullTransparentMesh: 1
+--- !u!1 &603975933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603975934}
+  - component: {fileID: 603975936}
+  - component: {fileID: 603975935}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603975934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603975933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.248, y: 1.756, z: 0.378}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 824746805}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &603975935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603975933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &603975936
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603975933}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.62
+  m_Range: 10.14
+  m_SpotAngle: 78.87376
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &608081322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,7 +4844,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 90ac924eb62506646af50d7048d7b437, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4626,7 +4884,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.097635396, y: -0.7968303, z: 0.09273378}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2434, y: 0.2434, z: 0.2434}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1592907522}
@@ -6012,7 +6270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1470760120137656266, guid: 3d89d97e6a6df4826875d39af54c1172,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 603975934}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d89d97e6a6df4826875d39af54c1172, type: 3}
 --- !u!1 &1972287826
@@ -6540,8 +6802,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c589e185d0c76a48ac19e74ae0665c2, type: 2}
-  - {fileID: 2100000, guid: 0c589e185d0c76a48ac19e74ae0665c2, type: 2}
+  - {fileID: 2100000, guid: 7ecf8e2b1408644d485c82dbca49ac37, type: 2}
+  - {fileID: 2100000, guid: 284c0adf047530442a7e23b4365615aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6817,8 +7079,9 @@ GameObject:
   - component: {fileID: 8581603194412483135}
   - component: {fileID: 2146999815034829655}
   - component: {fileID: 7570054885035376044}
+  - component: {fileID: 8581603194412483136}
   m_Layer: 0
-  m_Name: EmergencyStop
+  m_Name: Record Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9273,8 +9536,9 @@ GameObject:
   - component: {fileID: 2259993268264553761}
   - component: {fileID: 8467134195964343369}
   - component: {fileID: 91441483592299186}
+  - component: {fileID: 8467134195964343370}
   m_Layer: 0
-  m_Name: EmergencyStop
+  m_Name: Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9461,8 +9725,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8313b7f851584554aa895abc637c721f, type: 2}
-  - {fileID: 2100000, guid: 8313b7f851584554aa895abc637c721f, type: 2}
+  - {fileID: 2100000, guid: ac486b295b8d54758a11e0eba1cb0d9a, type: 2}
+  - {fileID: 2100000, guid: 284c0adf047530442a7e23b4365615aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9828,6 +10092,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7072298514182931611}
   m_Mesh: {fileID: -8847045846954475538, guid: 7ab6f3b0fd1a6ba41b2a47766c16613f, type: 3}
+--- !u!114 &8467134195964343370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072298514182931611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efd09f44c334cc45abf43175b085d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherMaterial: {fileID: 2100000, guid: 0c589e185d0c76a48ac19e74ae0665c2, type: 2}
 --- !u!1 &8547089292736797542
 GameObject:
   m_ObjectHideFlags: 0
@@ -9863,6 +10140,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1811122274386848966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8581603194412483136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751884822558477189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0efd09f44c334cc45abf43175b085d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherMaterial: {fileID: 2100000, guid: cb26f7e030d2caf42816d1e99c2b8dcb, type: 2}
 --- !u!1 &8589798806051469490
 GameObject:
   m_ObjectHideFlags: 0
