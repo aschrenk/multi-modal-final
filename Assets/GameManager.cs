@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -317,6 +318,10 @@ public class GameManager : MonoBehaviour
             RouteSplit();
             PlayLine();
             return;
+        }
+        else if (currentLine == 64)
+        {
+            SceneManager.LoadScene("Create-with-VR-Starter-Scene");
         }
         //end scene 1, setup scene 2 (3 for demo)
         else if (currentLine == 17)

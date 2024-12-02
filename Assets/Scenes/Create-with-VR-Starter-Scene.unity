@@ -956,23 +956,23 @@ MonoBehaviour:
   - 1.985
   - 1.881
   - 4.519
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
+  - 3.84
+  - 2.847
+  - 3.864
+  - 4.101
+  - 2.232
+  - 2.743
+  - 4.18
+  - 2.664
+  - 2.448
+  - 1.75
+  - 4.232
+  - 2.978
+  - 2.832
+  - 1.272
+  - 4.153
+  - 2.784
+  - 2.784
   - 1.2
   - 4.023
   - 3.528
@@ -982,35 +982,35 @@ MonoBehaviour:
   - 3.36
   - 4.752
   - 3.474
+  - 3.762
+  - 5.544
+  - 2.856
+  - 4.101
+  - 3.056
+  - 4.224
+  - 2.142
+  - 1.296
   - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
-  - 3
+  - 3.788
+  - 4.104
+  - 3.408
+  - 5.544
+  - 3.504
+  - 2.691
+  - 2.544
+  - 6.12
+  - 2.376
+  - 3.768
+  - 1.724
+  - 2.952
+  - 3.984
+  - 6.768
+  - 5.146
+  - 2.088
+  - 2.064
+  - 1.824
+  - 4.056
+  - 1.128
   scriptLine:
   - 'Thank you for calling Pizza Pizza, home of the Piece of Pizza Pizza! Thank you
     for calling Pizza Pizza, home of the Piece of Pizza Pizza! '
@@ -1114,23 +1114,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6f04f111f6071ab429d7caa0304e64c0, type: 3}
   - {fileID: 8300000, guid: edeb608770575e14cabcc9dc477965b3, type: 3}
   - {fileID: 8300000, guid: 09e4ec8dc45908a43bcb039a9a9603ee, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: 4b1bbab1c1886e14a925a0f3454c2b2d, type: 3}
+  - {fileID: 8300000, guid: 9e6e1de115f00914c9268b0738ee22b9, type: 3}
+  - {fileID: 8300000, guid: df7d143b8f9dba545b654b7070d4193e, type: 3}
+  - {fileID: 8300000, guid: 1b5220018a9bde24f8e2fead9e5a8d68, type: 3}
+  - {fileID: 8300000, guid: 0c4e7dfe90ef34c478b55ae742945f71, type: 3}
+  - {fileID: 8300000, guid: 0803e01c9107c664cb6b20e5cfe63362, type: 3}
+  - {fileID: 8300000, guid: 7ad1d059c8f74f944b5c538161b9fd70, type: 3}
+  - {fileID: 8300000, guid: 1e0079feaaa102449bc9f56b5917ab2b, type: 3}
+  - {fileID: 8300000, guid: 4c2ebadf331974248bf84a867bc866e3, type: 3}
+  - {fileID: 8300000, guid: 394f0a6e11fa8ea4f8a5d7b4826888dd, type: 3}
+  - {fileID: 8300000, guid: b332280971ca15946b1a32fc70b817ed, type: 3}
+  - {fileID: 8300000, guid: 46041e053d8708641b61c8534d683dbe, type: 3}
+  - {fileID: 8300000, guid: 61870f08844a1b64b9eb39ce8fdf1a0c, type: 3}
+  - {fileID: 8300000, guid: 650277d564fd8f14e8d48661526f067c, type: 3}
+  - {fileID: 8300000, guid: 6ad4c9248bcdbdc46a7e5a048b0802f8, type: 3}
+  - {fileID: 8300000, guid: f1ca35f9fd1192241962554380530fb5, type: 3}
+  - {fileID: 8300000, guid: 4efe763b6b416b64a84603a809e2ae38, type: 3}
   - {fileID: 8300000, guid: c38cfed37c25ccc4ea8707d529d705c2, type: 3}
   - {fileID: 8300000, guid: 1626c9aec2831704e88d7cbe41363d99, type: 3}
   - {fileID: 8300000, guid: b7cb821daf5af1444ac84a68594eb687, type: 3}
@@ -1140,35 +1140,35 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f27be01a0fba5ea489cee3ae39dc4ddf, type: 3}
   - {fileID: 8300000, guid: d7ec6c2cf6395d345b786dd299eaed38, type: 3}
   - {fileID: 8300000, guid: 80ef05d74009c1542b75eab283961498, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
-  - {fileID: 8300000, guid: 28e0735174c1c4ed683675c57b4d07a2, type: 3}
+  - {fileID: 8300000, guid: e48e3d4e109aae542ad19ba9c361063c, type: 3}
+  - {fileID: 8300000, guid: b7b835b8468ca7f4097dc12c68540827, type: 3}
+  - {fileID: 8300000, guid: 74d5487b948eb8143abc2c3ef1b6150c, type: 3}
+  - {fileID: 8300000, guid: af5dbe042d6f4ca43b40f71c8e6e5fc3, type: 3}
+  - {fileID: 8300000, guid: de23723340e63bc46890cccf855ff436, type: 3}
+  - {fileID: 8300000, guid: b166c0520c44954469c6fe68e6078697, type: 3}
+  - {fileID: 8300000, guid: 8ed8cda4497bd984f93cde540e69a497, type: 3}
+  - {fileID: 8300000, guid: 01e0a5889dd2934469386e0dd322b39f, type: 3}
+  - {fileID: 8300000, guid: 99afcce5f1e95934986958153a38055b, type: 3}
+  - {fileID: 8300000, guid: 9ecc01d2daf057a41b3fcb2306d7c1f0, type: 3}
+  - {fileID: 8300000, guid: fb6e8abc7b66f7b46baf972ee1a7256b, type: 3}
+  - {fileID: 8300000, guid: 8e72be3adb283a54b82acaba233a1ffd, type: 3}
+  - {fileID: 8300000, guid: 1e2920610e521eb49a00114e9f5a1399, type: 3}
+  - {fileID: 8300000, guid: 2bbebae251ff9434a904deaf66d1ef77, type: 3}
+  - {fileID: 8300000, guid: 3c74d8fc3b053fe4aacad08eef31e36b, type: 3}
+  - {fileID: 8300000, guid: b0af7e5b6ac7530429e716e4307b535f, type: 3}
+  - {fileID: 8300000, guid: 6587cb7204de5b54aa7eb8baed24b696, type: 3}
+  - {fileID: 8300000, guid: 5bc822f515cd7964087eeeb0fac86f42, type: 3}
+  - {fileID: 8300000, guid: 440a8cab3dbb8314fb5157246b1bda9c, type: 3}
+  - {fileID: 8300000, guid: 4fef98239c7bc904fa3355680271d48e, type: 3}
+  - {fileID: 8300000, guid: 95b9bfcad1a1a204f8ff91bd2881f2e1, type: 3}
+  - {fileID: 8300000, guid: 37422d11140dde74dbaa64c267c3c6d9, type: 3}
+  - {fileID: 8300000, guid: 74acfaa262dac3c4599c420983ed0038, type: 3}
+  - {fileID: 8300000, guid: a8930fb240ad5a94992a24a042e58dad, type: 3}
+  - {fileID: 8300000, guid: 5255f972596340d46989a42d6a37731b, type: 3}
+  - {fileID: 8300000, guid: b27c2204f693d924e9d4d877c3871d2b, type: 3}
+  - {fileID: 8300000, guid: f00de57689b4948438a14631358590f6, type: 3}
+  - {fileID: 8300000, guid: af55c9a695055cc47b996f4803e26b9a, type: 3}
+  - {fileID: 8300000, guid: 13e8642f1a4ee3544ba215707729acba, type: 3}
   infoPopup: {fileID: 1116339241}
   wholeScreen: {fileID: 190018421}
   speakerScreen: {fileID: 2033004270}
@@ -1701,17 +1701,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584829958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -3.4925e-10}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484153843}
   m_Father: {fileID: 602221926}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0016000271, y: -0.32379997}
-  m_SizeDelta: {x: 0.1737, y: -0.512}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.002, y: 0.166}
+  m_SizeDelta: {x: 1.1848, y: 0.41949993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584829960
 MonoBehaviour:
@@ -1843,8 +1843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.0397}
+  m_SizeDelta: {x: 1, y: 1.0795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &602221927
 MonoBehaviour:
@@ -2395,14 +2395,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Hey there! This is a shortened version of my full game for the sake of
-    having the playtest feature only the completed sections of dialogue. The finished
-    game will be signifigantly longer! \nThank you for your time!\n\nThe controls
-    are:\nGrab to pick up objects and press buttons\nPress up on the joystick to
-    reach further"
+  m_text: 'Use the machine in front of you to tap into calls and interfere with the
+    story. Your choices matter, and playing more than once may have different outcomes.
+
+
+    Controls:
+
+    Grab
+    to pick up objects and press buttons
+
+    Press up on the joystick to reach further'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18b5c80e0615531479a4eae29bf66fad, type: 2}
+  m_sharedMaterial: {fileID: 9187580152334440978, guid: 18b5c80e0615531479a4eae29bf66fad,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2426,8 +2432,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.05
-  m_fontSizeBase: 0.05
+  m_fontSize: 0.06
+  m_fontSizeBase: 0.06
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4291,8 +4297,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Got it!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 500c8b014e8c041b8982d40b1db00225, type: 2}
+  m_sharedMaterial: {fileID: -6674944201535329505, guid: 500c8b014e8c041b8982d40b1db00225,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4316,8 +4323,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.3
-  m_fontSizeBase: 0.3
+  m_fontSize: 0.25
+  m_fontSizeBase: 0.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4326,8 +4333,8 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_characterSpacing: -7
+  m_wordSpacing: -20
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -4776,7 +4783,7 @@ PrefabInstance:
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9943,7 +9950,7 @@ Transform:
   m_GameObject: {fileID: 6303273588111094827}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.366, y: -0.1488, z: 0.046}
+  m_LocalPosition: {x: -0.355, y: -0.1488, z: 0.046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
